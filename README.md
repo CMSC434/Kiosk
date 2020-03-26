@@ -6,7 +6,7 @@ CMSC434 Semester Project
 ## Git workflow 
 This workflow is something I've done in the past(and still use).
 I haven't interned at a crazy big company or anything, so if any 
-modifications should be made, I'd appreciate the feedback.
+modifications should be made, I'd appreciate the feedback. This will help us stay organized, since we will not be able to constantly communicate with each other in real time. 
 
 The basic flow of events is listed below.
 Follow the Link for a more detailed explanaion of each step.
