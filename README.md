@@ -10,12 +10,12 @@ modifications should be made, I'd appreciate the feedback.
 
 The basic flow of events is listed below.
 Follow the Link for a more detailed explanaion of each step.
-1. Create an Issue
-1. Create a local brach from master
-1. Work on implementation and make some commits
-1. Push local branch
-1. Create pull request
-1. Merge into master branch
+1. [Create an Issue](https://github.com/CMSC434/Kiosk#1-create-an-issue)
+1. [Create a local brach from master](https://github.com/CMSC434/Kiosk#2-create-a-local-branch-from-master)
+1. [Work on implementation and make some commits](https://github.com/CMSC434/Kiosk#3-work-on-implementation-and-make-some-commits)
+1. [Push local branch]()
+1. [Create pull request]()
+1. [Merge into master branch]()
 
 ### 1) Create an Issue
 1. At the top navbar below the repo name, click on issues
@@ -48,7 +48,7 @@ On the newly created local branch, work on your issue and make commits.
 Commit messages should somewhat indicate what changes you made with that commit. 
 Let me know if I should write how to commit changes
 
-### 3) Push local branch
+### 4) Push local branch
 Once you feel like you are done, and you commited your final changes, push the local branch with
 `git push origin HEAD` (You might only need git push depending on your configuration)
 
@@ -66,7 +66,7 @@ On the right hand side:
 1. At this point, there will be an option below to merge into master. Don't do this until every reviewer has reviewed!!
 
 
-### 5) Merge into master branch
+### 6) Merge into master branch
 Once everyone has approved the pull request, click "merge" to master and then delete the branch(Should give you the option to do it right after).
 Once merged into master, be sure to checkout to master and do a `git pull` to update your local repo. 
 
