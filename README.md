@@ -13,9 +13,9 @@ Follow the Link for a more detailed explanaion of each step.
 1. [Create an Issue](https://github.com/CMSC434/Kiosk#1-create-an-issue)
 1. [Create a local brach from master](https://github.com/CMSC434/Kiosk#2-create-a-local-branch-from-master)
 1. [Work on implementation and make some commits](https://github.com/CMSC434/Kiosk#3-work-on-implementation-and-make-some-commits)
-1. [Push local branch]()
-1. [Create pull request]()
-1. [Merge into master branch]()
+1. [Push local branch](https://github.com/CMSC434/Kiosk#4-push-local-branch)
+1. [Create pull request](https://github.com/CMSC434/Kiosk#5-create-pull-request)
+1. [Merge into master branch](https://github.com/CMSC434/Kiosk#6-merge-into-master-branch)
 
 ### 1) Create an Issue
 1. At the top navbar below the repo name, click on issues
