@@ -2,6 +2,29 @@
 CMSC434 Semester Project
 
 
+## Usage
+First the setup will consist of two steps : 
+#### 1) Install Node and npm
+* https://www.npmjs.com/get-npm
+
+Check that you have it properly installed with 
+```
+node -v
+npm -v
+```
+#### 2) Start local development 
+By default, npm install will install all modules listed as dependencies in package.json
+```
+git clone git@github.com:CMSC434/Kiosk.git
+cd kiosk
+npm install
+```
+TO run the server run:
+`npm start`
+In the root directory
+Go to `http://localhost:3000/` to see the "app"
+
+https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 
 ## Git workflow 
 This workflow is something I've done in the past(and still use).
