@@ -1,0 +1,23 @@
+{
+  "name": "Kiosk",
+  "version": "1.0.0",
+  "description": "CMSC434 Semester Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CMSC434/Kiosk.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CMSC434/Kiosk/issues"
+  },
+  "homepage": "https://github.com/CMSC434/Kiosk#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
