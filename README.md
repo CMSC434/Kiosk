@@ -12,6 +12,13 @@ Check that you have it properly installed with
 node -v
 npm -v
 ```
+Here is my output 
+```
+--deleted-- $ node -v
+v13.8.0
+--deleted-- $ npm -v
+6.13.6
+```
 #### 2) Start local development 
 By default, npm install will install all modules listed as dependencies in package.json
 ```
