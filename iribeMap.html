@@ -1,0 +1,126 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iribe Map</title>
+    <style>
+    	td {
+            padding: 10px;
+            text-align: center;
+        }
+        .myButton {
+            box-shadow:inset 0px 1px 0px 0px #f29c93;
+            background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+            background-color:#fe1a00;
+            border-radius:6px;
+            border:1px solid #d83526;
+            display:inline-block;
+            cursor:pointer;
+            color:#ffffff;
+            font-family:Arial;
+            font-size:15px;
+            font-weight:bold;
+            padding:6px 24px;
+            text-decoration:none;
+            text-shadow:0px 1px 0px #b23e35;
+        }
+        .myButton:hover {
+            background:linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
+            background-color:#ce0100;
+        }
+        .myButton:active {
+            position:relative;
+            top:1px;
+        }
+        footer {
+            background-color: #cc0000;
+            background-image: url("https://undergrad.cs.umd.edu/sites/all/themes/cs_turtle/images/dept_logo_reversed.png");
+            background-repeat: no-repeat;
+            background-size: 20% auto;
+            background-position-x: 98%;
+            background-position-y: center;
+            color: #fff;
+            padding-left: 15px;
+            padding-bottom: 15px;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-style: normal;
+        }
+        #footer_address {
+            float:left;
+        }
+        #footer_phone_numbers {
+            width: 75%;
+            text-align:center;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        .column {
+            float: left;
+            width: 50%;
+            padding: 10px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://www.cs.umd.edu/sites/default/files/logo_top_bottom.png" alt="Computer Science University of Maryland logo" style="height:10%; width:10%; text-align:center" class="center">
+        <img id="map" src="https://iribe.cs.umd.edu/sites/iribe.cs.umd.edu/files/Ground%20floor.png" alt="help button" style="width:35%; height:35%" class="center">
+
+<table style="width:100%">
+	<tbody><tr>
+    	<td>
+        	<button class="myButton" onclick="document.getElementById('map').src='https://iribe.cs.umd.edu/sites/iribe.cs.umd.edu/files/Ground%20floor.png'">Ground Floor</button>
+        </td>
+        <td>
+        	<button class="myButton" onclick="document.getElementById('map').src='https://iribe.cs.umd.edu/sites/iribe.cs.umd.edu/files/Floor%20one.png'">First Floor</button>
+        </td>
+        <td>
+        	<button class="myButton" onclick="document.getElementById('map').src='https://iribe.cs.umd.edu/sites/iribe.cs.umd.edu/files/images/slideshow/Upper%20floor_0.png'">Second Floor</button>
+        </td>
+        <td>
+        	<button class="myButton" onclick="document.getElementById('map').src='https://iribe.cs.umd.edu/sites/iribe.cs.umd.edu/files/images/slideshow/Upper%20floor_0.png'">Third Floor</button>
+        </td>
+    </tr>
+</tbody></table><table>
+
+</table><table style="width:100%">
+    <tbody><tr>
+        <td style="text-align:left">
+            <button class="myButton" onclick="document.location = 'home page.html'">Back</button>
+        </td>
+        <td style="text-align:right">
+            <img src="https://image.flaticon.com/icons/svg/61/61079.svg" alt="help button" style="height:30px">
+        </td>
+</tr></tbody></table>
+
+<footer>
+    <div id="footer_address">
+        <address>
+            <br>
+            Brendan Iribe Center for Computer Science and Engineering<br>
+            University of Maryland<br>
+            8125 Paint Branch Drive<br>
+            College Park, MD 20742<br>
+        </address>
+    </div>
+    <div id="footer_phone_numbers">
+        <br>
+        <strong>Department of Computer Science</strong><br>
+        (301) 405-2662<br>
+        <strong>CS Undergraduate Office</strong><br>
+        (301) 405-2672<br>
+    </div>
+</footer>
+
+ </body></html>
