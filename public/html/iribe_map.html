@@ -3,6 +3,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iribe Map</title>
     <style>
+        html, body{
+            position:fixed;
+            top:0;
+            bottom:0;
+            left:0;
+            right:0;
+        }
     	td {
             padding: 10px;
             text-align: center;
@@ -32,6 +39,10 @@
             top:1px;
         }
         footer {
+            position: fixed;
+            left:0;
+            bottom:0;
+            width:100%;
             background-color: #cc0000;
             background-image: url("https://undergrad.cs.umd.edu/sites/all/themes/cs_turtle/images/dept_logo_reversed.png");
             background-repeat: no-repeat;
@@ -75,7 +86,7 @@
 </head>
 <body>
     <img src="https://www.cs.umd.edu/sites/default/files/logo_top_bottom.png" alt="Computer Science University of Maryland logo" style="height:10%; width:10%; text-align:center" class="center">
-        <img id="map" src="https://iribe.cs.umd.edu/sites/iribe.cs.umd.edu/files/Ground%20floor.png" alt="help button" style="width:35%; height:35%" class="center">
+        <img id="map" src="https://iribe.cs.umd.edu/sites/iribe.cs.umd.edu/files/Ground%20floor.png" class="center" alt="help button">
 
 <table style="width:100%">
 	<tbody><tr>
@@ -86,10 +97,10 @@
         	<button class="myButton" onclick="document.getElementById('map').src='https://iribe.cs.umd.edu/sites/iribe.cs.umd.edu/files/Floor%20one.png'">First Floor</button>
         </td>
         <td>
-        	<button class="myButton" onclick="document.getElementById('map').src='https://iribe.cs.umd.edu/sites/iribe.cs.umd.edu/files/images/slideshow/Upper%20floor_0.png'">Second Floor</button>
+        	<button class="myButton" onclick="document.getElementById('map').src='https://iribe.cs.umd.edu/files/images/slideshow/Upper%20floor_0.png'">Second Floor</button>
         </td>
         <td>
-        	<button class="myButton" onclick="document.getElementById('map').src='https://iribe.cs.umd.edu/sites/iribe.cs.umd.edu/files/images/slideshow/Upper%20floor_0.png'">Third Floor</button>
+        	<button class="myButton" onclick="document.getElementById('map').src='https://iribe.cs.umd.edu/files/images/slideshow/Upper%20floor_0.png'">Third Floor</button>
         </td>
     </tr>
 </tbody></table><table>
@@ -97,7 +108,7 @@
 </table><table style="width:100%">
     <tbody><tr>
         <td style="text-align:left">
-            <button class="myButton" onclick="document.location = 'home page.html'">Back</button>
+            <button class="myButton" onclick="document.location = 'Home Page'">Back</button>
         </td>
         <td style="text-align:right">
             <img src="https://image.flaticon.com/icons/svg/61/61079.svg" alt="help button" style="height:30px">
@@ -123,4 +134,4 @@
     </div>
 </footer>
 
- </body></html>
+</body></html>
