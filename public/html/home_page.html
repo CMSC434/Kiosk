@@ -2,111 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <style>
-        td {
-            padding: 25px;
-            text-align: center;
-        }
-        img {
-            max-width: 100%;
-            height: 75px;
-        }
-        .myButton {
-            box-shadow:inset 0px 1px 0px 0px #f29c93;
-            background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
-            background-color:#fe1a00;
-            border-radius:6px;
-            border:1px solid #d83526;
-            display:inline-block;
-            cursor:pointer;
-            color:#ffffff;
-            font-family:Arial;
-            font-size:15px;
-            font-weight:bold;
-            padding:6px 24px;
-            text-decoration:none;
-            text-shadow:0px 1px 0px #b23e35;
-        }
-        .myButton:hover {
-            background:linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
-            background-color:#ce0100;
-        }
-        .myButton:active {
-            position:relative;
-            top:1px;
-        }
-        footer {
-            background-color: #cc0000;
-            background-image: url("https://undergrad.cs.umd.edu/sites/all/themes/cs_turtle/images/dept_logo_reversed.png");
-            background-repeat: no-repeat;
-            background-size: 20% auto;
-            background-position-x: 98%;
-            background-position-y: center;
-            color: #fff;
-            padding-left: 15px;
-            padding-bottom: 15px;
-            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-            font-style: normal;
-        }
-        #footer_address {
-            float:left;
-        }
-        #footer_phone_numbers {
-            width: 75%;
-            text-align:center;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>Home</title>
 </head>
 <body>
-<table style="width:100%">
-    <tr>
-        <td colspan="3">
-            <img src="https://www.cs.umd.edu/sites/default/files/logo_top_bottom.png"
-                 alt="Computer Science University of Maryland logo" style="height:256px;">
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <button class="myButton" onclick="document.location = 'home page.html'">Building Map</button>
-        </td>
-        <td>
-            <button class="myButton" onclick="document.location = 'home page.html'">Search</button>
-        </td>
-        <td>
-            <button class="myButton" onclick="document.location = 'home page.html'">Campus Map</button>
-        </td>
-    </tr>
-    <tr>
-        <td colspan="3">
-            <button class="myButton" onclick="document.location = 'home page.html'">Events</button>
-        </td>
-    </tr>
-    <tr>
-        <td colspan="3" style="text-align:right">
-            <img src="https://image.flaticon.com/icons/svg/61/61079.svg" alt="help button">
-        </td>
-    </tr>
-</table>
-
+<div class="content-container">
+    <div class="top_logo-container">
+        <img src="https://www.cs.umd.edu/sites/default/files/logo_top_bottom.png"
+             alt="Computer Science University of Maryland logo">
+    </div>
+    <table>
+        <tr>
+            <td>
+                <button class="myButton" onclick="window.location.href = '/building-map';">Building Map</button>
+            </td>
+            <td>
+                <button class="myButton" onclick="window.location.href = '/search';">Room Search</button>
+            </td>
+            <td>
+                <button class="myButton" onclick="window.location.href = '/campus-map';">Campus Map</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <button class="myButton" onclick="window.location.href = '/events';">Events</button>
+            </td>
+        </tr>
+    </table>
+    <div class="help_icon-container">
+        <img src="https://image.flaticon.com/icons/svg/61/61079.svg" alt="help icon">
+        <a href="help_page.html"></a>
+    </div>
+</div>
 <footer>
-    <div id="footer_address">
-        <address>
-            <br>
-            Brendan Iribe Center for Computer Science and Engineering<br>
-            University of Maryland<br>
-            8125 Paint Branch Drive<br>
-            College Park, MD 20742<br>
-        </address>
-    </div>
-    <div id="footer_phone_numbers">
+    <div class="address-container">
+    <address>
         <br>
-        <strong>Department of Computer Science</strong><br>
-        (301) 405-2662<br>
-        <strong>CS Undergraduate Office</strong><br>
-        (301) 405-2672<br>
-    </div>
+        Brendan Iribe Center for Computer Science and Engineering<br>
+        University of Maryland<br>
+        8125 Paint Branch Drive<br>
+        College Park, MD 20742<br>
+    </address>
+</div>
+    <div class="phone_numbers-container">
+    <br>
+    <strong>Department of Computer Science</strong><br>
+    (301) 405-2662<br>
+    <strong>CS Undergraduate Office</strong><br>
+    (301) 405-2672<br>
+</div>
 </footer>
 </body>
 </html>
