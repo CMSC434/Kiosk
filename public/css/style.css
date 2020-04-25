@@ -60,7 +60,9 @@ html, body {
   position: relative;
   top: 1px;
 }
-
+p {
+  font-size: 22px;
+}
 table {
   width: 100%;
 }
@@ -82,8 +84,9 @@ footer {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
   color: #fff;
-  position: absolute;
-  width: 99.35%;
+  position: fixed;
+  width: 100%;
+  left: 0;
   bottom: 0;
   display: flex;
   justify-content: flex-start;
