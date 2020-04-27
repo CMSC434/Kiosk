@@ -47,43 +47,43 @@
             </tr>
             <tr>
                 <td>Evan Golub</td>
-                <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">0138</button></td>
+                <td><button class="myButton" onclick="window.location.href = 'building_map.html';">0138</button></td>
                 <td>1-2pm MWF</td>
                 <td>CMSC434</td>
             </tr>
 	    <tr>
                 <td>Anwar Mamat</td>
-                <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">0138</button></td>
+                <td><button class="myButton" onclick="window.location.href = 'building_map.html';">0138</button></td>
                 <td>4-5pm TTh</td>
                 <td>CMSC330, CMSC433</td>
             </tr>
             <tr>
                 <td>Nelson Padua-Perez</td>
-                <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">0324</button></td>
+                <td><button class="myButton" onclick="window.location.href = 'building_map.html';">0324</button></td>
                 <td>1-2pm MF</td>
                 <td>CMSC131, CMSC132</td>
             </tr>
             <tr>
                 <td>Michelle Hugue</td>
-                <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">2116</button></td>
+                <td><button class="myButton" onclick="window.location.href = 'building_map.html';">2116</button></td>
                 <td>10-11am MWF</td>
                 <td>CMSC411</td>
             </tr>
             <tr>
                 <td>Clyde Kruskal</td>
-                <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">2140</button></td>
+                <td><button class="myButton" onclick="window.location.href = 'building_map.html';">2140</button></td>
                 <td>3-4pm MWF</td>
                 <td>CMSC351</td>
             </tr>
             <tr>
                 <td>Michael Marsh</td>
-                <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">3116</button></td>
+                <td><button class="myButton" onclick="window.location.href = 'building_map.html';">3116</button></td>
                 <td>10-11am 2-3pm MF</td>
                 <td>CMSC414, CMSC420</td>
             </tr>
             <tr>
                 <td>David Mount</td>
-                <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">3008</button></td>
+                <td><button class="myButton" onclick="window.location.href = 'building_map.html';">3008</button></td>
                 <td>2:30-3:30pm WWF</td>
                 <td>CMSC420</td>
             </tr>
@@ -121,7 +121,7 @@
             table = document.getElementById("myTable");
             tr = table.getElementsByTagName("tr");
             for (i = 0; i < tr.length; i++) {
-                td = tr[i].getElementsByTagName("td")[1];
+                td = tr[i].getElementsByTagName("td")[0];
                 if (td) {
                     txtValue = td.textContent || td.innerText;
                     if (txtValue.toUpperCase().indexOf(filter) > -1) {
