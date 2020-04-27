@@ -11,7 +11,27 @@ app.use(express.json());
 // All we're doing here is just "sending" or displaying the 
 // HTML file for the homepage. Located in public/html
 app.get("/", (req, res) => {
-  res.sendFile('/public/html/index.html', { root: __dirname });
+  res.sendFile('/public/html/home_page.html', { root: __dirname });
+});
+
+//Campus Map
+app.get("/campus-map", (req, res) => {
+  res.sendFile('/public/html/campus_map.html', { root: __dirname });
+});
+
+//Building Map
+app.get("/building-map", (req, res) => {
+  res.sendFile('/public/html/building_map.html', { root: __dirname });
+});
+
+//Search
+app.get("/search", (req, res) => {
+  res.sendFile('/public/html/search_page.html', { root: __dirname });
+});
+
+//Events Page
+app.get("/events", (req, res) => {
+  res.sendFile('/public/html/events.html', { root: __dirname });
 });
 
 app.listen(PORT, () => {
