@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>Search By Room Number</title>
+</head>
+<body>
+<div class="content-container">
+    <div class="top-container">
+        <div class="shortcuts">
+            <h1>Shortcuts</h1>
+            <button class="myButton" onclick="window.location.href = 'Home Page.html';">
+                <img src="https://image.flaticon.com/icons/svg/25/25694.svg"
+                     alt="home icon">
+            </button>
+            <button class="myButton" onclick="window.location.href = 'room_search.html';">
+                <img src="https://image.flaticon.com/icons/svg/483/483356.svg"
+                     alt="search icon">
+            </button>
+            <button class="myButton" onclick="window.location.href = 'events.html';">
+                <img src="https://image.flaticon.com/icons/svg/483/483608.svg"
+                     alt="events icon">
+            </button>
+            <button class="myButton" onclick="window.location.href = 'building_map.html';">
+                <img src="https://www.flaticon.com/premium-icon/icons/svg/1982/1982253.svg"
+                     alt="building map icon">
+            </button>
+            <button class="myButton" onclick="window.location.href = 'campus_map.html';">
+                <img src="https://image.flaticon.com/icons/svg/1483/1483234.svg"
+                     alt="campus map icon">
+            </button>
+        </div>
+        <div class="top_logo">
+            <img src="https://www.cs.umd.edu/sites/default/files/logo_top_bottom.png"
+                 alt="Computer Science University of Maryland logo">
+        </div>
+    </div>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Room Number">
+    <div class="results_table">
+        <table id="myTable">
+            <tr>
+                <th>Course ID</th> 
+                <th>Room</th> 
+                <th>Professor</th> 
+                <th>Time</th> 
+            </tr>
+            <tr>
+                <td>CMSC131</td>
+                <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">1024</button></td>
+                <td>Evan Golub</td>
+                <td>2:00pm-3:15pm</td>
+            </tr>
+            <tr>
+                <td>CMSC131</td>
+                <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">0324</button></td>
+                <td>Anwar Mamat</td>
+                <td>12:00pm-1:15pm</td>
+            </tr>
+            <tr>
+                <td>CMSC250</td>
+                <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">1116</button></td>
+                <td>Nelson Padua-Perez</td>
+                <td>9:00am-9:50am</td>
+            </tr>
+            <tr>
+                <td>CMSC132</td>
+                <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">1207</button></td>
+                <td>Anwar Mamat</td>
+                <td>1:00pm-1:50pm</td>    
+            </tr>
+            <tr>
+                <td>CMSC132</td>
+                <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">2024</button></td>
+                <td>Clyde Kruskal</td>
+                <td>2:00pm-3:15pm</td>    
+            </tr>
+            <tr>
+                <td>CMSC216</td>
+                <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">2107</button></td>
+                <td>Nelson Padua-Perez</td>
+                <td>3:30pm-4:20pm</td>    
+            </tr>
+            <tr>
+                <td>CMSC411</td>
+                <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">2207</button></td>
+                <td>Michelle Hugue</td>
+                <td>2:00pm-3:30pm</td>
+            </tr>
+            <tr>
+                <td>CMSC420</td>
+                <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">3014</button></td>
+                <td>Michael Marsh</td>
+                <td>1:30pm-2:45pm</td>            
+            </tr>
+            <tr>
+                <td>CMSC414</td>
+                <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">3201</button></td>
+                <td>David Mount</td>
+                <td>2:00pm-3:15pm</td>
+            </tr>
+        </table>
+    </div>
+    <div class="bottom-container">
+        <a href="help.html">
+            <img src="https://image.flaticon.com/icons/svg/61/61079.svg" alt="help icon">
+        </a>
+    </div>
+    <footer>
+        <div class="address-container">
+            <address>
+                <br>
+                Brendan Iribe Center for Computer Science and Engineering<br>
+                University of Maryland<br>
+                8125 Paint Branch Drive<br>
+                College Park, MD 20742<br>
+            </address>
+        </div>
+        <div class="phone_numbers-container">
+            <br>
+            <strong>Department of Computer Science</strong><br>
+            (301) 405-2662<br>
+            <strong>CS Undergraduate Office</strong><br>
+            (301) 405-2672<br>
+        </div>
+    </footer>
+</div>
+<script>
+        function myFunction() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html> 
