@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>Search By Faculty Name</title>
+</head>
+<body>
+<div class="content-container">
+    <div class="top-container">
+        <div class="shortcuts">
+            <h1>Shortcuts</h1>
+            <button class="myButton" onclick="window.location.href = 'home.html';">
+                <img src="https://image.flaticon.com/icons/svg/25/25694.svg"
+                     alt="home icon">
+            </button>
+            <button class="myButton" onclick="window.location.href = 'room_search.html';">
+                <img src="https://image.flaticon.com/icons/svg/483/483356.svg"
+                     alt="search icon">
+            </button>
+            <button class="myButton" onclick="window.location.href = 'events.html';">
+                <img src="https://image.flaticon.com/icons/svg/483/483608.svg"
+                     alt="events icon">
+            </button>
+            <button class="myButton" onclick="window.location.href = 'building_map.html';">
+                <img src="https://www.flaticon.com/premium-icon/icons/svg/1982/1982253.svg"
+                     alt="building map icon">
+            </button>
+            <button class="myButton" onclick="window.location.href = 'campus_map.html';">
+                <img src="https://image.flaticon.com/icons/svg/1483/1483234.svg"
+                     alt="campus map icon">
+            </button>
+        </div>
+        <div class="top_logo">
+            <img src="https://www.cs.umd.edu/sites/default/files/logo_top_bottom.png"
+                 alt="Computer Science University of Maryland logo">
+        </div>
+    </div>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Room by Faculty Name">
+    <div class="results_table">
+        <table id="myTable">
+            <tr>
+                <th>Room Number</th> <!--IRB #### (button); links to appropriate floor image; table ordered by this-->
+                <th>In Session</th> <!--Title of session or Name of person using it -->
+                <th>Purpose</th> <!--Workshop, Lecture or Advising-->
+                <th>Time</th> <!--Time range-->
+                <th>Room Schedule</th> <!--pop-up prompt and shows a image for now (button)-->
+            </tr>
+            <tr>
+                <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">0138</button></td>
+                <td>John Realname</td>
+                <td>Lecture</td>
+                <td>2:00pm-3:15pm</td>
+                <td><button class="myButton" onclick="window.location.href = 'https://helpdesk.cs.umd.edu/faq/iribe/01-conference-scheduled_panel.jpg';">See Today's Schedule</button></td>
+            </tr>
+	    <tr>
+                <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">0138</button></td>
+                <td>Benry Port</td>
+                <td>Lecture</td>
+                <td>3:30pm-4:20pm</td>
+                <td><button class="myButton" onclick="window.location.href = 'https://helpdesk.cs.umd.edu/faq/iribe/01-conference-scheduled_panel.jpg';">See Today's Schedule</button></td>
+            </tr>
+            <tr>
+                <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">0324</button></td>
+                <td>Not In Use</td>
+                <td></td>
+                <td></td>
+                <<td><button class="myButton" onclick="window.location.href = 'https://helpdesk.cs.umd.edu/faq/iribe/01-conference-scheduled_panel.jpg';">See Today's Schedule</button></td>
+            </tr>
+            <tr>
+                <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">1116</button></td>
+                <td>Chick Enjerk</td>
+                <td>Advising</td>
+                <td></td>
+                <td><button class="myButton" onclick="window.location.href = 'https://helpdesk.cs.umd.edu/faq/iribe/01-conference-scheduled_panel.jpg';">See Today's Schedule</button></td>
+            </tr>
+            <tr>
+                <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">1207</button></td>
+                <td>Jerry Atryk</td>
+                <td>Advising</td>
+                <td></td>
+                <td><button class="myButton" onclick="window.location.href = 'https://helpdesk.cs.umd.edu/faq/iribe/01-conference-scheduled_panel.jpg';">See Today's Schedule</button></td>
+            </tr>
+            <tr>
+                <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">2024</button></td>
+                <td>Dave Doe</td>
+                <td>Lecture</td>
+                <td>1:00pm-2:15pm</td>
+                <td><button class="myButton" onclick="window.location.href = 'https://helpdesk.cs.umd.edu/faq/iribe/01-conference-scheduled_panel.jpg';">See Today's Schedule</button></td>
+            </tr>
+            <tr>
+                <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">2107</button></td>
+                <td>Not In Use</td>
+                <td></td>
+                <td></td>
+                <td><button class="myButton" onclick="window.location.href = 'https://helpdesk.cs.umd.edu/faq/iribe/01-conference-scheduled_panel.jpg';">See Today's Schedule</button></td>
+            </tr>
+            <tr>
+                <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">3014</button></td>
+                <td>Dennis Jop</td>
+                <td>Lecture</td>
+                <td>1:30pm-2:45pm</td>
+                <td><button class="myButton" onclick="window.location.href = 'https://helpdesk.cs.umd.edu/faq/iribe/01-conference-scheduled_panel.jpg';">See Today's Schedule</button></td>
+            </tr>
+            <tr>
+                <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">3201</button></td>
+                <td>Benry Port</td>
+                <td>Lecture</td>
+                <td>2:00pm-3:15pm</td>
+                <td><button class="myButton" onclick="window.location.href = 'https://helpdesk.cs.umd.edu/faq/iribe/01-conference-scheduled_panel.jpg';">See Today's Schedule</button></td>
+            </td>
+	    <tr>
+                <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">3201</button></td>
+                <td>John Realname</td>
+                <td>Lecture</td>
+                <td>3:30pm-4:20</td>
+                <td><button class="myButton" onclick="window.location.href = 'https://helpdesk.cs.umd.edu/faq/iribe/01-conference-scheduled_panel.jpg';">See Today's Schedule</button></td>
+            </td>
+	    <tr>
+                <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">5021</button></td>
+                <td>John Realname</td>
+                <td>Office</td>
+                <td>n/a</td>
+            </td>
+	    <tr>
+                <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">5120</button></td>
+                <td>Dave Doe</td>
+                <td>Office</td>
+                <td>n/a</td>
+            </tr>
+	    <tr>
+                <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">5220</button></td>
+                <td>Benry Port</td>
+                <td>Office</td>
+                <td>n/a</td>
+            </td>
+        </table>
+    </div>
+    <div class="bottom-container">
+        <a href="help.html">
+            <img src="https://image.flaticon.com/icons/svg/61/61079.svg" alt="help icon">
+        </a>
+    </div>
+    <footer>
+        <div class="address-container">
+            <address>
+                <br>
+                Brendan Iribe Center for Computer Science and Engineering<br>
+                University of Maryland<br>
+                8125 Paint Branch Drive<br>
+                College Park, MD 20742<br>
+            </address>
+        </div>
+        <div class="phone_numbers-container">
+            <br>
+            <strong>Department of Computer Science</strong><br>
+            (301) 405-2662<br>
+            <strong>CS Undergraduate Office</strong><br>
+            (301) 405-2672<br>
+        </div>
+    </footer>
+</div>
+<script>
+        function myFunction() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[1];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
