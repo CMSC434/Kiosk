@@ -3,7 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <title>Campus Map</title>
+    <title>Room Search</title>
+    <style>
+        td {
+            padding: 20px;
+        }
+        .myButton {
+            font-size: 35px;
+            padding: 15px 40px;
+        }
+    </style>
 </head>
 <body>
 <div class="content-container">
@@ -36,16 +45,19 @@
                  alt="Computer Science University of Maryland logo">
         </div>
     </div>
-    <div class="map-container">
-        <iframe src="//maps.umd.edu/map/"
-                width="100%" height="700px">
-            <p>
-                <a href="//maps.umd.edu/map/">
-                    Fallback link for browsers that don't support iframes
-                </a>
-            </p>
-        </iframe>
-    </div>
+    <table>
+        <tr>
+            <td>
+                <button class="myButton" onclick="window.location.href = 'search_courseID.html';">Search by CourseID</button>
+            </td>
+            <td>
+                <button class="myButton" onclick="window.location.href = 'search_room_number.html';">Search by Room Number</button>
+            </td>
+            <td>
+                <button class="myButton" onclick="window.location.href = 'search_faculty_name.html';">Search by Faculty Name</button>
+            </td>
+        </tr>
+    </table>
     <div class="bottom-container">
         <a href="help.html">
             <img src="https://image.flaticon.com/icons/svg/61/61079.svg" alt="help icon">
