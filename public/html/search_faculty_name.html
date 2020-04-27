@@ -36,104 +36,57 @@
                  alt="Computer Science University of Maryland logo">
         </div>
     </div>
-    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Room by Faculty Name">
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Faculty">
     <div class="results_table">
         <table id="myTable">
             <tr>
-                <th>Room Number</th> <!--IRB #### (button); links to appropriate floor image; table ordered by this-->
-                <th>In Session</th> <!--Title of session or Name of person using it -->
-                <th>Purpose</th> <!--Workshop, Lecture or Advising-->
-                <th>Time</th> <!--Time range-->
-                <th>Room Schedule</th> <!--pop-up prompt and shows a image for now (button)-->
+                <th>Faculty</th> 
+                <th>Office Room #</th> 
+                <th>Office Hours</th> 
+                <th>Courses</th> 
             </tr>
             <tr>
+                <td>Evan Golub</td>
                 <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">0138</button></td>
-                <td>John Realname</td>
-                <td>Lecture</td>
-                <td>2:00pm-3:15pm</td>
-                <td><button class="myButton" onclick="window.location.href = 'https://helpdesk.cs.umd.edu/faq/iribe/01-conference-scheduled_panel.jpg';">See Today's Schedule</button></td>
+                <td>1-2pm MWF</td>
+                <td>CMSC434</td>
             </tr>
 	    <tr>
+                <td>Anwar Mamat</td>
                 <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">0138</button></td>
-                <td>Benry Port</td>
-                <td>Lecture</td>
-                <td>3:30pm-4:20pm</td>
-                <td><button class="myButton" onclick="window.location.href = 'https://helpdesk.cs.umd.edu/faq/iribe/01-conference-scheduled_panel.jpg';">See Today's Schedule</button></td>
+                <td>4-5pm TTh</td>
+                <td>CMSC330, CMSC433</td>
             </tr>
             <tr>
+                <td>Nelson Padua-Perez</td>
                 <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">0324</button></td>
-                <td>Not In Use</td>
-                <td></td>
-                <td></td>
-                <<td><button class="myButton" onclick="window.location.href = 'https://helpdesk.cs.umd.edu/faq/iribe/01-conference-scheduled_panel.jpg';">See Today's Schedule</button></td>
+                <td>1-2pm MF</td>
+                <td>CMSC131, CMSC132</td>
             </tr>
             <tr>
-                <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">1116</button></td>
-                <td>Chick Enjerk</td>
-                <td>Advising</td>
-                <td></td>
-                <td><button class="myButton" onclick="window.location.href = 'https://helpdesk.cs.umd.edu/faq/iribe/01-conference-scheduled_panel.jpg';">See Today's Schedule</button></td>
+                <td>Michelle Hugue</td>
+                <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">2116</button></td>
+                <td>10-11am MWF</td>
+                <td>CMSC411</td>
             </tr>
             <tr>
-                <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">1207</button></td>
-                <td>Jerry Atryk</td>
-                <td>Advising</td>
-                <td></td>
-                <td><button class="myButton" onclick="window.location.href = 'https://helpdesk.cs.umd.edu/faq/iribe/01-conference-scheduled_panel.jpg';">See Today's Schedule</button></td>
+                <td>Clyde Kruskal</td>
+                <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">2140</button></td>
+                <td>3-4pm MWF</td>
+                <td>CMSC351</td>
             </tr>
             <tr>
-                <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">2024</button></td>
-                <td>Dave Doe</td>
-                <td>Lecture</td>
-                <td>1:00pm-2:15pm</td>
-                <td><button class="myButton" onclick="window.location.href = 'https://helpdesk.cs.umd.edu/faq/iribe/01-conference-scheduled_panel.jpg';">See Today's Schedule</button></td>
+                <td>Michael Marsh</td>
+                <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">3116</button></td>
+                <td>10-11am 2-3pm MF</td>
+                <td>CMSC414, CMSC420</td>
             </tr>
             <tr>
-                <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">2107</button></td>
-                <td>Not In Use</td>
-                <td></td>
-                <td></td>
-                <td><button class="myButton" onclick="window.location.href = 'https://helpdesk.cs.umd.edu/faq/iribe/01-conference-scheduled_panel.jpg';">See Today's Schedule</button></td>
+                <td>David Mount</td>
+                <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">3008</button></td>
+                <td>2:30-3:30pm WWF</td>
+                <td>CMSC420</td>
             </tr>
-            <tr>
-                <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">3014</button></td>
-                <td>Dennis Jop</td>
-                <td>Lecture</td>
-                <td>1:30pm-2:45pm</td>
-                <td><button class="myButton" onclick="window.location.href = 'https://helpdesk.cs.umd.edu/faq/iribe/01-conference-scheduled_panel.jpg';">See Today's Schedule</button></td>
-            </tr>
-            <tr>
-                <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">3201</button></td>
-                <td>Benry Port</td>
-                <td>Lecture</td>
-                <td>2:00pm-3:15pm</td>
-                <td><button class="myButton" onclick="window.location.href = 'https://helpdesk.cs.umd.edu/faq/iribe/01-conference-scheduled_panel.jpg';">See Today's Schedule</button></td>
-            </td>
-	    <tr>
-                <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">3201</button></td>
-                <td>John Realname</td>
-                <td>Lecture</td>
-                <td>3:30pm-4:20</td>
-                <td><button class="myButton" onclick="window.location.href = 'https://helpdesk.cs.umd.edu/faq/iribe/01-conference-scheduled_panel.jpg';">See Today's Schedule</button></td>
-            </td>
-	    <tr>
-                <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">5021</button></td>
-                <td>John Realname</td>
-                <td>Office</td>
-                <td>n/a</td>
-            </td>
-	    <tr>
-                <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">5120</button></td>
-                <td>Dave Doe</td>
-                <td>Office</td>
-                <td>n/a</td>
-            </tr>
-	    <tr>
-                <td><button class="myButton" onclick="window.location.href = 'iribe_map.html';">5220</button></td>
-                <td>Benry Port</td>
-                <td>Office</td>
-                <td>n/a</td>
-            </td>
         </table>
     </div>
     <div class="bottom-container">
