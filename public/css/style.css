@@ -176,6 +176,9 @@ footer {
   color: #fff;
   display: flex;
   justify-content: flex-start;
+  position: fixed;
+  left:0;
+  bottom:0;
 }
 
 .phone_numbers-container {
