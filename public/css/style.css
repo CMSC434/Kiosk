@@ -1,0 +1,185 @@
+/*General Styling*/
+html, body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.top-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.top_logo img {
+  height: 105px;
+  position: relative;
+  left: 196px;
+}
+
+.shortcuts {
+  position: relative;
+  left: 15px;
+  bottom: 10px;
+}
+
+.shortcuts img {
+  box-shadow: inset 0px 1px 0px 0px #f29c93;
+  background: linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+  background-color: #fe1a00;
+  width: 50px;
+  height: 50px;
+}
+
+.shortcuts button {
+  padding: 3px 8px 0px 8px;
+}
+
+.shortcuts h1 {
+  font-size: 20px;
+}
+
+.bottom-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bottom-container a {
+  height: 75px;
+  position: relative;
+  right: 15px;
+  margin: 5px;
+}
+
+.bottom-container img {
+  height: 75px;
+}
+
+.map-container {
+  display: flex;
+  justify-content: center;
+}
+
+.map-container img {
+  width: 50%;
+
+}
+
+.myButton {
+  box-shadow: inset 0px 1px 0px 0px #f29c93;
+  background: linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+  background-color: #fe1a00;
+  border-radius: 10px;
+  border: 2px solid #d83526;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 40px;
+  padding: 20px 50px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #b23e35;
+}
+
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+input[type=text] {
+  padding: 8px 0px 8px 20px;
+  margin: 5px 1px 5px 5px;
+  border: 3px solid #DDDDDD;
+  border-radius: 6px;
+  width: 29%;
+  font-size: 16px;
+}
+
+input[type=text]:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  border: 3px solid rgba(81, 203, 238, 1);
+}
+
+.details_button {
+  width: 85%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.results_table {
+  overflow-y: auto;
+}
+
+.results_table table {
+  table-layout: fixed;
+}
+
+.results_table th {
+  background: #D00A0A;
+  color: white;
+}
+
+.results_table td, th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+.results_table tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.results_table button {
+  font-size: 18px;
+  padding: 10px 10px;
+}
+
+.room_button-resize {
+  width: 30%;
+}
+
+table {
+  width: 100%;
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+td {
+  padding: 18px;
+}
+
+p {
+  font-size: 18px;
+}
+
+footer {
+  background-color: #cc0000;
+  background-image: url("https://undergrad.cs.umd.edu/sites/all/themes/cs_turtle/images/dept_logo_reversed.png");
+  background-repeat: no-repeat;
+  background-size: 17% auto;
+  background-position-x: 96%;
+  background-position-y: center;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: #fff;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.phone_numbers-container {
+  position: relative;
+  left: 15%;
+  text-align: center;
+}

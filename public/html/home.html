@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <title>Help</title>
+    <title>Home</title>
     <style>
         .top-container {
             display: flex;
             justify-content: center;
         }
         .top_logo img {
-            left: 7px;
+            position: static;
         }
     </style>
 </head>
@@ -24,28 +24,27 @@
     </div>
     <table>
         <tr>
-            <td colspan="3">
+            <td>
                 <button class="myButton" onclick="window.location.href = 'building_map.html';">Building Map</button>
-                <p>Displays a map of the building.</p>
             </td>
-        </tr>
-        <tr>
             <td>
                 <button class="myButton" onclick="window.location.href = 'room_search.html';">Room Search</button>
-                <p>Allows you to search for rooms by room number, by CourseID, or by faculty members teaching in the room.</p>
             </td>
             <td>
                 <button class="myButton" onclick="window.location.href = 'campus_map.html';">Campus Map</button>
-                <p>Displays a map of campus. You are currently in the Brendan Irebe Center for Computer Science and Engineering, located in the Eastern portion of campus.</p>
             </td>
         </tr>
         <tr>
             <td colspan="3">
                 <button class="myButton" onclick="window.location.href = 'events.html';">Events</button>
-                <p>Lists current and upcoming events being held in the building, as well as locations and times. <br>For more information, visit the help desk on the second floor, or send the CS Department an email at ugrad@cs.umd.edu.</p>
             </td>
         </tr>
     </table>
+    <div class="bottom-container">
+        <a href="help.html">
+            <img src="https://image.flaticon.com/icons/svg/61/61079.svg" alt="help icon">
+        </a>
+    </div>
     <footer>
         <div class="address-container">
             <address>

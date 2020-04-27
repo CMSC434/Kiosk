@@ -1,191 +1,132 @@
-    <html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <style>
-        html, body{
-            position:fixed;
-            top:0;
-            bottom:0;
-            left:0;
-            right:0;
-        }
-        td {
-            padding: 25px;
-            text-align: center;
-        }
-        img {
-            max-width: 100%;
-            height: 75px;
-        }
-        .center{
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .myButton {
-            box-shadow:inset 0px 1px 0px 0px #f29c93;
-            background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
-            background-color:#fe1a00;
-            border-radius:6px;
-            border:1px solid #d83526;
-            display:inline-block;
-            cursor:pointer;
-            color:#ffffff;
-            font-family:Arial;
-            font-size:30px;
-            font-weight:bold;
-            padding:6px 24px;
-            text-decoration:none;
-            text-shadow:0px 1px 0px #b23e35;
-        }
-        .myButton:hover {
-            background:linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
-            background-color:#ce0100;
-        }
-        .myButton:active {
-            position:relative;
-            top:1px;
-        }
-        footer {
-            position: fixed;
-            left:0;
-            bottom:0;
-            width:100%;
-            background-color: #cc0000;
-            background-image: url("https://undergrad.cs.umd.edu/sites/all/themes/cs_turtle/images/dept_logo_reversed.png");
-            background-repeat: no-repeat;
-            background-size: 20% auto;
-            background-position-x: 98%;
-            background-position-y: center;
-            color: #fff;
-            padding-left: 15px;
-            padding-bottom: 15px;
-            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-            font-style: normal;
-        }
-        #footer_address {
-            float:left;
-        }
-        #footer_phone_numbers {
-            width: 75%;
-            text-align:center;
-        }
-        table {
-            font-family: arial, sans-serif;
-            border-collapse: collapse;
-            width: 100%;
-        }
-        td, th {
-            border: 1px solid #dddddd;
-            text-align: center;
-            padding: 8px;
-        }
-        tr:nth-child(even) {
-            background-color: #dddddd;
-        }
-        #myInput {
-            background-position: 10px 10px;
-            background-repeat: no-repeat;
-            width: 95%;
-            font-size: 16px;
-            padding: 12px 20px 12px 40px;
-            border: 1px solid #ddd;
-            margin-bottom: 12px;
-        }
-    </style>
-    </head>
-
-    <body>
-    <img style="height: 10%;" class="center" src="https://www.cs.umd.edu/sites/default/files/logo_top_bottom.png" alt="Computer Science University of Maryland logo" >
-    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Event Name" title="Type in a name">
-    <div style="height:50%; overflow-y: auto;">
-    <table id= "myTable" style="width:100%; ">
-        <tr class="header">
-            <th>Day</th>
-            <th>Time</th>
-            <th>Event Name</th>
-            <th>Room Number</th>
-            <th>Event Details</th>
-        </tr>
-        <tr>
-            <td>4/26</td>
-            <td>1:30pm</td>
-            <td>Prospective Student Open House</td>
-            <td>3014</td>
-            <td>Talk to students and professors about the exciting future in the UMD Computer Science Department</td>
-        </tr>
-        <tr>
-            <td>4/26</td>
-            <td>4:30pm</td>
-            <td>Microsoft Meet And Greet</td>
-            <td>Main Lobby</td>
-            <td>Meet and talk with Reprentatives from Microsoft</td>
-        </tr>
-        <tr>
-            <td>4/27</td>
-            <td>10:00am</td>
-            <td>400 Level Info Session</td>
-            <td>2024</td>
-            <td>Rising Upper Level Comp Sci students, come and hear about the 400 level classes you are soon going to be taking</td>
-        </tr>
-        <tr>
-            <td>4/28</td>
-            <td>12:00pm</td>
-            <td>Student Government Meeting</td>
-            <td>1012</td>
-            <td>Student Govt Meeting: All are welcome!</td>
-        </tr>
-        <tr>
-            <td>4/29</td>
-            <td>11:00 am</td>
-            <td>Dr LastName's Talk on Quantum Computing</td>
-            <td>1014</td>
-            <td>Dr Firstname Lastname's lecture on Quantum Computing, Open to the public</td>
-        </tr>
-        <tr>
-            <td>4/30</td>
-            <td>5:30pm</td>
-            <td>Professors Meeting</td>
-            <td>4006</td>
-            <td>Professors only meeting about lesson planning and classes for next semester</td>
-        </tr>             
-        <tr>
-            <td>4/30</td>
-            <td>5:30pm</td>
-            <td>Professors Meeting</td>
-            <td>4006</td>
-            <td>Professors only meeting about lesson planning and classes for next semester</td>
-        </tr> 
-        <tr>
-            <td>4/30</td>
-            <td>5:30pm</td>
-            <td>Professors Meeting</td>
-            <td>4006</td>
-            <td>Professors only meeting about lesson planning and classes for next semester</td>
-        </tr> 
-        <tr>
-            <td>4/30</td>
-            <td>5:30pm</td>
-            <td>Professors Meeting</td>
-            <td>4006</td>
-            <td>Professors only meeting about lesson planning and classes for next semester</td>
-        </tr> 
-    </table>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>Events</title>
+</head>
+<body>
+<div class="content-container">
+    <div class="top-container">
+        <div class="shortcuts">
+            <h1>Shortcuts</h1>
+            <button class="myButton" onclick="window.location.href = 'home.html';">
+                <img src="https://image.flaticon.com/icons/svg/25/25694.svg"
+                     alt="home icon">
+            </button>
+            <button class="myButton" onclick="window.location.href = 'room_search.html';">
+                <img src="https://image.flaticon.com/icons/svg/483/483356.svg"
+                     alt="search icon">
+            </button>
+            <button class="myButton" onclick="window.location.href = 'events.html';">
+                <img src="https://image.flaticon.com/icons/svg/483/483608.svg"
+                     alt="events icon">
+            </button>
+            <button class="myButton" onclick="window.location.href = 'building_map.html';">
+                <img src="https://www.flaticon.com/premium-icon/icons/svg/1982/1982253.svg"
+                     alt="building map icon">
+            </button>
+            <button class="myButton" onclick="window.location.href = 'campus_map.html';">
+                <img src="https://image.flaticon.com/icons/svg/1483/1483234.svg"
+                     alt="campus map icon">
+            </button>
+        </div>
+        <div class="top_logo">
+            <img src="https://www.cs.umd.edu/sites/default/files/logo_top_bottom.png"
+                 alt="Computer Science University of Maryland logo">
+        </div>
     </div>
-
-    <table style="width:100%; border:none;">
-        <tbody><tr>
-            <td style="text-align:left; border: none;">
-                <button class="myButton" onclick="document.location = 'home page.html'">Back</button>
-            </td>
-            <td style="text-align:right; border:none;">
-                <img src="https://image.flaticon.com/icons/svg/61/61079.svg" alt="help button">
-            </td>
-    </tr></tbody></table>
-        
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Event Name">
+    <div class="results_table">
+        <table id="myTable">
+            <tr>
+                <th>Event Name</th> <!--Table ordered by this-->
+                <th>Room Number</th> <!--#### (button); links to appropriate floor image-->
+                <th>Day</th>
+                <th>Time</th> <!--Time range-->
+                <th>Event Details</th> <!--pop-up prompt that shows more details (button); links to unavailable page for now-->
+            </tr>
+            <tr>
+                <td>400 Level Info Session</td>
+                <td><button class="myButton" onclick="window.location.href = 'building_map.html';">2024</button></td>
+                <td>4/21</td>
+                <td>10:00am-11:00am</td>
+                <td><button class="myButton details_button" onclick="window.location.href = 'page_unavailable.html';">
+                    Rising Upper Level Comp Sci students, come and hear about the 400 level classes you are soon going to be taking</button></td>
+            </tr>
+            <tr>
+                <td>Appian Meet And Greet</td>
+                <td><button class="myButton room_button-resize" onclick="window.location.href = 'building_map.html';">Main Lobby</button></td>
+                <td>4/20</td>
+                <td>4:30pm-5:30pm</td>
+                <td><button class="myButton details_button" onclick="window.location.href = 'page_unavailable.html';">
+                    Meet and talk with Representatives from Appian</button></td>
+            </tr>
+            <tr>
+                <td>Dr LastName's Talk on Quantum Computing</td>
+                <td><button class="myButton" onclick="window.location.href = 'building_map.html';">1014</button></td>
+                <td>4/22</td>
+                <td>11:00am-12:00pm</td>
+                <td><button class="myButton details_button" onclick="window.location.href = 'page_unavailable.html';">
+                    Dr Firstname Lastname's lecture on Quantum Computing, Open to the public</button></td>
+            </tr>
+            <tr>
+                <td>Microsoft Meet And Greet</td>
+                <td><button class="myButton room_button-resize" onclick="window.location.href = 'building_map.html';">Main Lobby</button></td>
+                <td>4/24</td>
+                <td>4:30pm-5:30pm</td>
+                <td><button class="myButton details_button" onclick="window.location.href = 'page_unavailable.html';">
+                    Meet and talk with Representatives from Microsoft</button></td>
+            </tr>
+            <tr>
+                <td>Professors Meeting</td>
+                <td><button class="myButton" onclick="window.location.href = 'building_map.html';">3012</button></td>
+                <td>4/23</td>
+                <td>5:30pm-6:30pm</td>
+                <td><button class="myButton details_button" onclick="window.location.href = 'page_unavailable.html';">
+                    Professors only meeting about lesson planning and classes for next semester</button></td>
+            </tr>
+            <tr>
+                <td>Professors Meeting</td>
+                <td><button class="myButton" onclick="window.location.href = 'building_map.html';">1217</button></td>
+                <td>4/21</td>
+                <td>5:30pm-6:30pm</td>
+                <td><button class="myButton details_button" onclick="window.location.href = 'page_unavailable.html';">
+                    Professors only meeting about lesson planning and classes for next semester</button></td>
+            </tr>
+            <tr>
+                <td>Professors Meeting</td>
+                <td><button class="myButton" onclick="window.location.href = 'building_map.html';">2114</button></td>
+                <td>4/23</td>
+                <td>5:30pm-6:30pm</td>
+                <td><button class="myButton details_button" onclick="window.location.href = 'page_unavailable.html';">
+                    Professors only meeting about lesson planning and classes for next semester</button></td>
+            </tr>
+            <tr>
+                <td>Prospective Student Open House</td>
+                <td><button class="myButton" onclick="window.location.href = 'building_map.html';">3014</button></td>
+                <td>4/24</td>
+                <td>1:30pm-2:30pm</td>
+                <td><button class="myButton details_button" onclick="window.location.href = 'page_unavailable.html';">
+                    Talk to students and professors about the exciting future in the UMD Computer Science Department</button></td>
+            </tr>
+            <tr>
+                <td>Student Government Meeting</td>
+                <td><button class="myButton" onclick="window.location.href = 'building_map.html';">1012</button></td>
+                <td>4/21</td>
+                <td>12:00pm-1:00pm</td>
+                <td><button class="myButton details_button" onclick="window.location.href = 'page_unavailable.html';">
+                    Student Govt Meeting: All are welcome!</button></td>
+            </tr>
+        </table>
+    </div>
+    <div class="bottom-container">
+        <a href="help.html">
+            <img src="https://image.flaticon.com/icons/svg/61/61079.svg" alt="help icon">
+        </a>
+    </div>
     <footer>
-        <div id="footer_address">
+        <div class="address-container">
             <address>
                 <br>
                 Brendan Iribe Center for Computer Science and Engineering<br>
@@ -194,7 +135,7 @@
                 College Park, MD 20742<br>
             </address>
         </div>
-        <div id="footer_phone_numbers">
+        <div class="phone_numbers-container">
             <br>
             <strong>Department of Computer Science</strong><br>
             (301) 405-2662<br>
@@ -202,26 +143,26 @@
             (301) 405-2672<br>
         </div>
     </footer>
-
-    <script>
+</div>
+<script>
         function myFunction() {
-          var input, filter, table, tr, td, i, txtValue;
-          input = document.getElementById("myInput");
-          filter = input.value.toUpperCase();
-          table = document.getElementById("myTable");
-          tr = table.getElementsByTagName("tr");
-          for (i = 0; i < tr.length; i++) {
-            td = tr[i].getElementsByTagName("td")[2];
-            if (td) {
-              txtValue = td.textContent || td.innerText;
-              if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                tr[i].style.display = "";
-              } else {
-                tr[i].style.display = "none";
-              }
-            }       
-          }
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
         }
-        </script>
-
-    </body></html>
+    </script>
+</body>
+</html>
