@@ -1,69 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
     <title>Help</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
-        .top-container {
-            display: flex;
-            justify-content: center;
-        }
-        .top_logo img {
-            left: 7px;
-        }
+            html, body {
+              text-align: center;
+            }
+            h1 {
+              font-size: 2em;
+              font-weight: bold;
+            }
+            img {
+              width: 275px;
+            }
+            .content-container {
+              position: relative;
+              top: 10%;
+            }
+            h4 {
+                color: #cc2222!important;
+                font-size: 15px;
+                margin: 10px;
+            }
+            .material-icons {
+                font-size: 25px;
+                color: #ee0000;
+                position: relative;
+                top: 5px;
+            }
+            button {
+                margin: 0px 5px;
+            }
     </style>
 </head>
 <body>
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdwAAAClCAYAAAD2+UxIAAAAB3RJTUUH3wwIEywACKm3MwAAAAlwSFlzAAAewgAAHsIBbtB1PgAAAARnQU1BAACxjwv8YQUAAByCSURBVHja7Z3repu42obBa30H0GR+TZsmsd3zP6CJPWnazq8mcwTL+vwKZGMsgTZgdvc9VyZpgoUQoEfvRlKulMrAzebxSe2+v+ZD1wMAAKZNjuDaWX99UqvVWWfVQWW7N4QXAADiQHAtiFWb59faqo7/7V4RXQAACAfBreAS2irSXriYAQAgFAT3yPrxWeVH67VNbKsgvAAAEMLiBdfHqnWB6AIAgC+LFdx6UlQKSh2Owvsd4QUAACeLFNwUq9YF1i4AADSxKMHtQ2jrYO0CAICNRQju9vFZqcCkqBSwdgEAoM7sBfcWVq2Lw9Ha3WPtAgBANmPB3Xw9Cm1HSVEpSPPuvv89fEUAAGBQZie4kn0sBu1QVq0NXMwAADArwR3SfewDwgsAsFxmIbgitPpiRiy2BkQXAGCZTF5wN09Hqzabnn4hvAAAy2KygjtVoa1CQhUAwHKYnOBuvz4pNbKkqFSwdgEA5s+kBHfsSVFJHO/DC6ILADBbJiG4U0qKSsHcC6xdAID5MXrBnUOsNhRczAAA82O0grt5fDxWLJ+9VetC7ovcmv0bwgsAMAf+O3QF6siSjJlOiloNXZXBwMIFAJgfoxJc7T4ewfrHQ6Gt2uN/bHgAADA/RiG4S0mKakKEFqsWAGC+DC642qpdstBKoFYWwCBWCwAwawYT3KVbtbFJUabdBCxiAIDpcPMs5aVnHwsxSVHOFbZYMAMAYBLcVHBFbJeefRzjPm5bYYsFMwAAxs9NBPc81We5ehCzUcHm8VkrtG+7MZ0IAGC89C64IhoL1tmoWG2q2/2gZGoRwgsAMCZ6E1ySouLcvF1t0IC1CwAwLjoXXJKiyjm1r3HZx123G8ILADAOOhVc3MexSVH9thtJVQAAw9OJ4K4l+3jpVm1UUtSNF/1gChEAwGAkCy5WbbjLduj4NklVAAC3J1pwhxaNoYlx044pvk1sFwDgtgQLLu7jeKt2jG2G8AIA3IYgwR2raNyKYvu8PNsHxGqnsOgHSVUAAP3jJbjbo1WrFm/VTiApqoOLJKkKAKAfWgV3K7HaKYlGx0RtNDDxNiOpCgCge5yCS1JUTFLUfNqM2C4AQLdcCe7665Oe5jMH0UghVHAm5z7uqR0AAMDOheDOVTRiUTpyLXHN785GWUKbKXU4iu73eV8kAEDPaMGdkyu0D4pBiboQnSVNj3p5DUsWAwCAa04W7hIstVSq3oAltRUWLgBAOivzg8TppGO9xYb0U0VE1nwBAACEYM1SxsUMVXApAwCk0zgPV9b+zfNVQHEwR3ApAwCk06imupPVbuahqwkAADBt8t+fN+r+50ur9bKWpKoMN/MSwaUMAJBO/n4UXFmGUFzLPsIr+9/KFBmEdzngUgYASOfkUhYB/Xj4pt6/bBsdyLKAv85ozvAzAwAA+HIVwxXhbRNdYffKNKKlgHULAJDOyaVsAzczCLiUAQDSaRTcE0fhvfNMrFohurMDwQUASMdvkm3pZv5ocTXLHqqHg8LNPDMQWwCAdPws3Cqe1q4smpEtZHH/uYOFCwCQzn+DP1FmM7cJr+mgN1+fZI87hBcAABZNuIVboXAd59n9z79aC9jK+syI7iRh4QsAgHSSFkouds7JsrbYrvAic3eJ706SIjwAAAAphLuUbfi6md9e9d/WX2XvXdzMAACwHJJcyjbEgpXS/BKrnhWaO35wKQMApNO54BpEeMVf/alFeLF2xw9ZygAA6fS22a0IqChp69zdt9dibWbiuwAAMGN6s3CrhLmZxeLFmBoTuJQBANLpzcKtkhc+Y71aley/23SstnbZFGFUkKUMAJDOTQTXIMK7Wq1adyOSeKEIr2Q9L1F4VXndWJYAAPMhF4tzKBeuaKnPohniZtaVXYCrWYRWDzaOrB8e1Oo/3czcSgHhBwBI5yYx3CZ0fPcop3e/WrKZHx9VPuO1matCW2X79Dy4iT+2LOWPz1udFGAaRj8T4hWQnzO/XAHDux5wiqNHmcLKay7yDrLQ8hzeG3l271oGlx8P2waHjn1FN58Bs8/71VT/pi06fY732V/bhe3cIeW5noe2Mszn3v/cqvt//O+/L2Z2hj6XJJiaGy+/U5m1L2hiW65dr+rl6T5TvGXu8oxBU8V1ftuxTdjKaSqj6bqvPqfOazv4YLaRzSxtJD/v38LayIUcuHdcx+DmUxHfLVaraurY9mWHv34spxFlo+n/k3AJLVzzXgptviqa66LR8vMTIYuw+OzlLM9cvjJRlctDqyKmF3U5vkZ3P5rLe/8iz+b/xV+gavDiOJT4j1+7vKhfA/m5TZoGJB9Hccn/4/8o/vv5mzL3ouX0Weyg/v3LRt3/3NVuddhmK9Y6eZQhbSbtIeLssy+4D5unJz0yXK3cz5s0mAy0ffoGWTK3ENmV+ajl+vJi4C5hKkt5Ie0ZcqyKaHsZiDiFT53f/eKffhp46SE9f75aD/m5qc1DrnvX4BG8aQy3kXK1Kp8tAHevklg17fiuPCyHiYjtGKzbdy2O3Xg4fh87cW3hBJWVt1pF9z9fWwW++RTh1/b+5Zu/tVdJXrT9/c5hyb3/afeyfPrVHg5KpS62XaA9JAHkntuTtqFnYHTopduU69P7lmer/HpkCZFdOzDNrBf/NrpuDr0BT9A53W06HsE1lA+3jGybDhOhKjKah65wGDJIOIiL9jho2E9AbIWhs5TfH7bBeQarhgcjttPL83bRbaKPRvTJgbBdx78BonP/j33ELhZuD5d0QVs/EIOve72KdkEmnFNbtoE0u1efg94Jl+W2H8FguopcU+H6TSd0iql2K1vaI8Rt3cb4BDczmyKsvDZF2H3/exLTiIr6FQ/92B7ysWMNH5QDl7sff+XmKysXT5GvT7/slpF2I1teQvlMtSzXM5Uiuk0vf6z15LJw5RoOh+KabNdx6OAJ9LVwxYVt7pX5bnP1qso9Nd+9LdzyWnN1+T0k/q5j3eZZctz7WGSAXf+8mYlQ/TqcnmF3WZvHJ+uSuPXytLV2Kste9y4sXHlX5Hz/O/zv4ruvy9dSYmqVnAMSWxvp78pkgFjKsli4phxzrdWfmzyCgydNeSEvk8eo9BzPGNf1pMRpx5A0NWSWsnb/ra47qtiYmjXe2fB8fVhcz03nvypfqSs/me7Qa7xXBgI61lp/hhs2BrFdU/0cXsf8ebxWSwzXVl9BLFxlGbK7jr84l+W++nzO91q6KMN+7w9Rbm7ptK/i3Y6YamtZFsut6z7G9c6HHOt7PtvzbkvUrLdh0zX33UaxZY3Swr2upXEzN1sBLyc38+AapTGjoJgbIw9MaEZgXwzqUrYk5XSt/k2DOduFpySO+CWS+JfvE8P9/aef9XwXmI3bdQw3xV3fD5ZnT0Vess0izcp9wkOLsjx/sUIyhhiuWJnX70Xao9VlG4XGcJuYhuBmxs3s586Thi3cBMPUVc6bKrQhgf658u6IM4a4CS/Kszw7bYMzlyXrG1ss5i81H/pRKyskLutz7B89TGsRuo7hpmQCf5Qr2L1Xvr9/Tov/2lyiMfFfXZblUyaJLWRgbRPIFAOji/CWqb8RplCB0nWo1SIPbJe2NkrxUrtiuPXr9bnuyQiuIS+zmf2E98bxXQmZHJQ+b+hHxYo0cYexCe1QWcr3ts4t4V52OZXM1634h76Gy+kHdbFW2aWbLIQ2C1eEyP6upL8To7JwV6tiGk/l+3nKlx8mjm7azObWj2X/6va8mSkpPl4t2zOcchO6sHBN/cXdW/3+7Fm2JJQVM0+uy42qj6VF4uPJdiHV/fTq+rrb7t/kBLd6wT6p+maZyD6nEZ2WYjwKbUxGW2HRrkYbSh/KpfzRcYZqyktXx9fClc77esEL9xzM0EfAZeHqKXYSpxThydPGLa5pQWOycF38DhHxcjBvazOd0JVYl7ZwlxlsN3balhY6JNyFPhM4//Yse2cW5bC0zRjCarPPUvalOq+wXXj7ie8qdS479LOFVTv+3ZGGm4drG6l2fIboK/P94DkRykb9ue3awrXhSvr6cMR6XdOCRmXhOvijAxE37dVFWT5TGRtF1/LbQEP+gjHEcM21amGrNY60xdq0hX+++dVvUrr9RcZwm2ib0F9FHvhDlm7tnhOiwt3H65PQrkbnPrYxlIVri9WmtVZ3nlXfWZkm5neRElW559VSdMf+KywDNngebkOGdWjS1C3m4fpfliwRe/4yU4O6oGvLW/oMMxWlyc3sO3dXJZjenVi4h6IvlKlc5kv+7d1vVI6yroQVXKHr03osiObEZuGaqVvmWs11t3nRBl/asUuqSVVNL8m+dGHErM9cuJaUt7ukjmQlrvJZjHN6R69zXBu+p3WhHVrMntmq5yVLL+f5meUCU9zJRTnfVNvje+rUIwS9CbFwW5eVDCBF2Gyf/RRYnoi0hAry2vvZ5dKOVU6blLj6Id+WTaiZnDu1P/pf6Wyvi3esZ0zprIbasovHekp5sdMkkxYtsU3pyrKLXB3fgcvsev5qNvO/LXG2/Sm+255YVZ3iEyO2p4SICVi0dYZLmroWB500F+FGFWwPe1Ge+zn5/eDIlA7MVr2zJFmFLjFobSOHhVtdxEPEQn95iG2I58dW/xTP0dDTgiRWrZPhLG7Nj4f+6ib9kK3ZbIZA7nlcyLlT6//321tSGXUL0vYMiQT7x3O7vVXEcD3QS7F5r1b1PS8WZbGvfqOyhAnTlTjtFNzHNoach2t/+dqr8+/n9dVBYvG4XmYXtg4uNiBUPbd+FmqT+GOmO8XEcJuwVcAlhNapLgnn7sOKDDp/Gau+sz4naVVbt8QB956d+subPQ/FR4w2Dw9Xx4wihltrGxkEHCyDHt/+c6cHMNefj03AIoYbgtkUocWakFGMtnaz8/KAxRSfYrOE0NOahKhsInHaxrYZdClK9/KK1cHU79JKFQGS+/3p1z73LO5UnhEWsXilbD29JE9zQ1+IaOP6znHErKXchGuhD90e5Tv0+/PWPm0mi58jLaRYuNXn4aPyc/RazJZ7lWSBlzsAFZ6us8gZwVtbxMDlLXBZw1J2VUCLPqjoh+Tcux8/ellL2cSaRZhi5+Je1ystwdWnjTan78+nNto+WLYqdM3DfQy/7mks7dghKcsC+jKFzOMQht4P19W5t1TavRRi8E5BfuXqsi1LO1aPd8Y8245znNcVww1d6rCL9gl5t1KW7AyKGzvazWdpR9dc3JhBxVrnbgTmt8mA39XZPxU7D4VgW4LRFcMNWdrRWX/PPb5d19nWZm3LK8b0w7brdsVw3fVy95fzt3BrmNF6H2Wvy1HSnMR2DNw7XMFNNHWK+m8xo+fIzrZeRtDvW9um+y3y1CEPjsV2MZAd2qV8dU2Zxcq80butxaTBzbx77WaK4xg2UnFdZ6qVK7lcXbRRaAy3yThZnOBqAlar8kFGm5uIEexUGMN+uFp0PadzyTG/W1yJWjgP/uXJ3ItksRVcOxVFZg93HcMV7v8pEq18kwm78hoNnTRVR+bd2mL4MfXMA55dE8pqO1Yf47mgj+uYMcZwu2L34zVo0SPXMfPeD/eG5J7x3Sa63lR6jAy9H67h/keRbZsZITCJbmYLsnL+ZbFIQbuASabxvbF2LV/qcC7vznubuIP+KrYLvBZp8/uL4xrKMce4boC2cOvlHVLXRDJl707toyptfMpx0DvnlG0YiCRcVdsiaN6s7XodPzsT7CyfsaGz0Svnk6+Y+b272owIpbJKO6rscDjPggixqE4bthz0pNDsIgdFJui2rOu+LxOMql9Nu//Uj7N9VlWfl5YyWi35imBefXlmU5wWPcqKd7qep9O2yczu7bIO9euu/3v62/PdgNBR+tzitE0MuT0fAMBcmNXCFyn4iqfJTFuK2BbXXEw6H7oeAABTBsH1RPvx82UJLQAAdAeC64F2H6csxjlxsG4BANJZdNKUL0u3aseSNAUAMGUQXGgFCxcAIB0Et4XN16+Lt+6wcAEA0kFwW9gl7oQBAAAgILjQCi5lAIB0Vix6AW3gUgYASGcQC7eLBaXhdmDhAgCkM4jgXqyHO3JImsLCBQDogsFiuHe1hdHHCklTAADQBYMnTd2Vu434bqEEtweXcv88V7wIzwEehZBjbWwen1VXHgzbNdS/D4m5zm3CdnCx92kKzO16+qDaRjHbCg4uuIZipx4VvRE39MeQLmWf/TrNhhKxf08tw6f8bcvn/z4OatZPlxtjmH+3fW5bERL53dazzYpNKWRbsu/5cxk6abvXa4+9PqUMqZep3/nf15/t4t61XutXaZMnvQHH08OTenl71XXxLVvaZv31+t7oe5bwbhT3wK8OIcfq+gW22+bp8llafy2ej+bnPv5Z6aJPCX02fI5fPzQfsyqfcmkn2bavaCf/QetoBFeQ/TfF4lWeG4PDbZiDhSsvRW+Fe7SO8jho/1rsx1n/3sZLeX9ESGRPz5dKx2lvCxHa17x6X/8uQydN93p9FJ59w9/NZ+W7iJx5hau/v/7Ma75tGlgk3jW579IxvpR7nb7+eD3VRc7tY6VI2+RlT3l1jxLfjaIOzy2DjuJ+BRWsAp/58kjzLO3fiudDzusa+O3KQZWryNznxYhkLfdV6tah6MpzuP/R3M7mob5sp2LQunlqr8uoBNdwX9kYfGjhJWlqHklT8lJ0YS1Zy359bSx7ra2r2+4p3CjwkVMB90fh8bXoROT2nhupu15xEcOQzdjtZTdXd1dauynniCW/+sF1XFgTSLvptu+o78wbi7H/UcQreJAQUqfyvL6P8roctDQ1ycvxPW6zcJto6weEUQquoRrfHQqSpoZDXpJUC0IwBWhrwmMU2jVDvGRDP7TS6a89Y1z6vtSssXVpmSbV4bEUnhZUS68tLuWdp7chjkPLXwMf2bKmxuWZXj/3pbus3P67bBV0IulH1uVAxCWKPhZua62ab+W4BddgrF3iu8MwlEt5nxgjs5Ef0suw465mcIfZSW3c5yxG4j262LMwC7eo7+HqN7dC3MNNrmVxKfc5UNs54tuCHjQEv3/nojrZVbTNS6Bdu5fJRH1at0X5lfCFRx+hB+9vJpzQbonGIoLdVPYkBFcQa1e+DiNwMy+NObiUDS89uRBdI33fDlM6EfNV/XdMXTaP5w7JXd/Cxd5XxxNi4Qr7SvsVbdanRWmhza070BugAgceRbz3fO9fvqc972tPt37V7d17U115JDzyI0oL9/yb61qmupR9GGQD+o8vW3Wns5LD+aP83PuxDPm+9L1qb8FQFm5XLmXb9fRRdm55iX3f3mqnpjvNN7+6nTvTVaEKqhjB+7VDcZwW9tz/c6HX4/2ZMokpH0rdWrBlmr901GbGUqu+a5vKM7rxjInmAb+tUwx45BLFDit+9PVS7E7Cnnt/JoZiMHlZvkmeChmk7SouZvO7LlzKbQwiuDJC+Xj4pg3V+59/RV2guJnfv2x0GX2KriRN5av/DNJMY6HeEdyKfU/CKPTh2nmx1HcVMd4Paev6sT5Tgq7KKDsduc/yYVd76yxlz5wGnaWc+XfYJ/JzBuhYkBjuarXK+o3jCu6n0iTkNImuPHv5sYwrr4Vnretlh3s/8k4HbS6u69WeVla4lC+fqyKe+3xKaDQWbp+iO4zgmmbKjaWq9JSg0M+bz/z7eatUnkVnXzYhSVPbp37jXeDGL801vNyX0oXZdQeRVzpNsYhuLR4+049ctE3zMFnKPgOg1ISnbtqim4P/vlHiZKj7uI48e65s+OJZ7Pme9NxLNg3823I99haLVpD2Ms90VxZu030cPIYr1qlMcvt42Ebfrk+/ivguq1X1w5DzcNvGrr4xJvt1veYxFmEzh8pPt38WbRm/YXRzq0NjuH2w90yO0QOvhmdILNxbZLdX67v1iMPXaer7YirfZ3JRHO7m2Jdzv11/ryZNuUrtIobblrMxqIVbv2xxM2cHld39iovv3lfiu8R2u2Mol7KgWs6amoXZddLy2UpUyYsixJIy6Mw7GiSMwcI1V5TKrSzcAlX+PzBZ6ql5CpTJJA59JkcaTndU1v0nl4VbtE3xzsofUixcE8NuYnAL97pGhfCapKgYmEbULUNauCZ2ZRu9iiWX6ibbe64QE0Ku+l1lp/Wa3loW4rC15UORsdyV23EMFq5wzsa+9mRsj8/P2mMVp1tZuEV9TajD/53Ti/N41C7mmewrqz8Un/BPfXpSlSYL13xWPthm4dbtuLVe/rJYAtOszNX4+RRh652jYMZmMxvEVe2bWHX34zqBi6QpuQ2HUSzvaLJphZDYq4+F3raqkWt03Ml1lfUzHVv959jraot5FfFmsfHdsb9b06c35ZyFe5vknjG2gfOckgX9etvn3/W8y1KXu7fL59HXOu9idbK2Op/qe3yDQs81bsEtEcW8TxTed4kRtwivTXCFpSdNjUVwAQCmzPhcyhbychrRR4qb+cdLruN9uJmDQWwBANKZhOCeOAqvWOTvX75FqeanHy/sRhTBGGI4AABTZ1qCm5lpROeVpmIwuxExjcgPLFwAgHQmJ7iGk5v5c1o289C7EY0daZshdtgBAJgbI5qHG8kqP1m7sYlV8rmU+PBcEbEdczYnAMCUmL7gZufMYyOaMVOJUqcfzQ1J6UZsAQC6Y7IuZSsivHmeFN9dOkVc+3CDhdoBAJbFJObhRtPBwhlLWviC+bYAAP2xmvW81NM0ovhBxe6m66gOg7ZqDwqxBQDokdVdue7wXDN1i2lEedJuRHPGxGrHs9g8AMA8uZgSo5OO5r7LTsRuRHNc2lFbtVme7Ueyhi4AwNy5moP6UW7mPuft7Ypr9t/0fm6Cq93HWLQAADfFuehDsXyimr3wytW1JVbNRXD1vVZj2qsUAGA5tK6y9PFlc1Slec0eqtO0G9FcspRZxAIAYFhalfTu5y7PD/PezN0sE2n729SzlIt5tWH7xwIAQPd4rTT1qUwyMtNr5uxmnhNYtQAA4yFoaUfjdpVsZlFehHe8ILYAAOMiai1lk2QkFi+iOy4QWgCAcZKUDaUtXnWYdXx3ShSrRSG2AABjJHm3oLtyLitu5uEw84p3byzNCAAwVjrbnu+uEt+d/WpVI4INBwAApkHnE2xFeNUBN3PfsOEAAMC06GUD+vtfuzKpanNU3Rw3c8ewOTwAwPToRXANZq1ispm7odhwQGV7rFoAgMnRq+Aa7onvJsOGAwAA0+amiySbvXeJ7/pzitUitgAAk+YmFm6VUzbz541SOfHdJljEAgBgPtxccA13v4jvNsF0HwCAeTGY4BokvvtRboowaHx3JG5urFoAgHkyuOAKZzfzVql8uatVIbYAAPNlFIJruDPbAB6FN18tR3cQWgCA+TMqwTXc/1rONCIykAEAlsFNpwWFUiwTOc9pRHq6jyRGIbYAAItglBZulaq1O5fdiMhABgBYHqMXXMMcNr0XqzY/jhrYRg8AYHlMRnANxTSiYlOEKcV3xTwnMQoAYLlMTnAFs+n9b7F2s3G7mdlwAAAAhEkKruGPk5t5o/J8fPlfbKMHAACGSQuuYWzbACq9QUNGBjIAAJyYheAaJL479Kb3LGIBAAA2xueHTUSsXRFeNcDcXRKjAADAxaws3Cr3lfWZM49lIlPkGasWAADamJ2FW0fWZ/ZZrSpWLRFbAADwYbYWbpXzalXf9CSdLuK7CC0AAISwCME13P38q5NNEZjuAwAAoSxKcA2n/XcDhbdIxFKsgwwAAMEsUnANd3qZyHJThJZjyUAGAIAUFi24grF2/5VsZgeHg8r2LGIBAAAJ/D8plv1Jh5yHLgAAAABJRU5ErkJggg=="
+     alt="UMD CS Logo">
 <div class="content-container">
-    <div class="top-container">
-        <div class="top_logo">
-            <img src="https://www.cs.umd.edu/sites/default/files/logo_top_bottom.png"
-                 alt="Computer Science University of Maryland logo">
+    <br>
+    <h1>Contact Our Office</h1>
+        <h4>
+            <i class="material-icons">email</i> ugrad@cs.umd.edu
+        </h4>
+        <h4>
+            <i class="material-icons">local_phone</i> 301) 405-2672
+        </h4>
+        <h4>
+            <i class="material-icons">location_on</i> 1st Floor, Brendan Iribe Center for Computer Science and Engineering
+        </h4>
+        <br><br>
+        <div class="shortcuts">
+            <h1>Shortcuts</h1>
+            <button class="myButton" onclick="window.location.href = 'home.html';">
+                <img src="https://image.flaticon.com/icons/svg/25/25694.svg"
+                     alt="home icon">
+            </button>
+            <button class="myButton" onclick="window.location.href = 'room_search.html';">
+                <img src="https://image.flaticon.com/icons/svg/483/483356.svg"
+                     alt="search icon">
+            </button>
+            <button class="myButton" onclick="window.location.href = 'events.html';">
+                <img src="https://image.flaticon.com/icons/svg/483/483608.svg"
+                     alt="events icon">
+            </button>
+            <button class="myButton" onclick="window.location.href = 'building_map.html';">
+                <img src="https://www.flaticon.com/premium-icon/icons/svg/1982/1982253.svg"
+                     alt="building map icon">
+            </button>
+            <button class="myButton" onclick="window.location.href = 'campus_map.html';">
+                <img src="https://image.flaticon.com/icons/svg/1483/1483234.svg"
+                     alt="campus map icon">
+            </button>
         </div>
-    </div>
-    <table>
-        <tr>
-            <td colspan="3">
-                <button class="myButton" onclick="window.location.href = 'building_map.html';">Building Map</button>
-                <p>Displays a map of the building.</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <button class="myButton" onclick="window.location.href = 'room_search.html';">Room Search</button>
-                <p>Allows you to search for rooms by room number, by CourseID, or by faculty members teaching in the room.</p>
-            </td>
-            <td>
-                <button class="myButton" onclick="window.location.href = 'campus_map.html';">Campus Map</button>
-                <p>Displays a map of campus. You are currently in the Brendan Irebe Center for Computer Science and Engineering, located in the Eastern portion of campus.</p>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="3">
-                <button class="myButton" onclick="window.location.href = 'events.html';">Events</button>
-                <p>Lists current and upcoming events being held in the building, as well as locations and times. <br>For more information, visit the help desk on the second floor, or send the CS Department an email at ugrad@cs.umd.edu.</p>
-            </td>
-        </tr>
-    </table>
-    <footer>
-        <div class="address-container">
-            <address>
-                <br>
-                Brendan Iribe Center for Computer Science and Engineering<br>
-                University of Maryland<br>
-                8125 Paint Branch Drive<br>
-                College Park, MD 20742<br>
-            </address>
-        </div>
-        <div class="phone_numbers-container">
-            <br>
-            <strong>Department of Computer Science</strong><br>
-            (301) 405-2662<br>
-            <strong>CS Undergraduate Office</strong><br>
-            (301) 405-2672<br>
-        </div>
-    </footer>
+        <pre>         Home |  Room Search |  Events | Building Map | Campus Map</pre>
 </div>
 </body>
 </html>
